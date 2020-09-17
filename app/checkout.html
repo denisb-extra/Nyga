@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+	<title>Nyga | מוצרי איכות למטבח ולאמבט</title>
+
+	<link rel="stylesheet" href="fonts/font-awesome.min.css">
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="plugins/swiper/swiper.css">
+	<script src="plugins/swiper/swiper.js"></script> 
+	
+	<link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
+	<script src="plugins/fancybox/jquery.fancybox.js"></script> 
+	
+	<script src="plugins/scrollreveal/scrollreveal.js"></script> 
+	
+	<script src="plugins/mmenu/jquery-simple-mobilemenu.js"></script>
+	<link rel="stylesheet" href="plugins/mmenu/styles/jquery-simple-mobilemenu-slide.css">
+
+	<link rel="stylesheet" href="plugins/masterslider/style/masterslider.css" />  
+	<link rel="stylesheet" href="plugins/masterslider/skins/default/style.css" /> 
+	<script src="plugins/masterslider/masterslider.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="menu-top">
+	            <ul class="main-menu">
+	                <li class="current_page_item"><a href="/">ראשי</a></li>
+	                <li class=""><a href="/">אודות</a></li>
+	                <li class=""><a href="/">Niga Magazine</a> </li>
+	                <li class=""><a href="/">שאלות ותשובות</a></li>
+	                <li class=""><a href="/">יצירת קשר</a></li>
+	            </ul>  
+	        </div>
+
+	        <a href="#" class="search">
+	        	<span>חיפוש באתר</span>
+	        	<i class="fa fa-search" aria-hidden="true"></i>
+	        </a>
+		</div>
+	    <div class="header-inner">
+	        <a class="logo-cont" href="#">
+	            <img src="images/index/logo.png" alt="" />
+	        </a>
+
+	       	<div class="menu-cont">
+	            <ul class="main-menu">
+	                <li class=""><a href="/">מותגים נבחרים</a></li>
+	                <li class=""><a href="/">כיורים</a></li>
+	                <li class=""><a href="/">ברזים</a> </li>
+	                <li class=""><a href="/">מערכות מים</a></li>
+	                <li class=""><a href="/">משטחי עבודה</a></li>
+	                <li class=""><a href="/">קוריאן</a></li>
+	                <li class=""><a href="/">מוצר בהתאמה אישית</a></li>
+	            </ul>  
+	        </div>
+
+	        <div class="contacts">
+	        	<div class="icons">
+	        		<div class="icon">
+	            		<i class="fa fa-heart" aria-hidden="true"></i>
+	            	</div>
+	            	<div class="icon">
+	            		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+	            	</div>
+	            </div>
+	            <a class="tel" href="tel:03-0000000">
+	                <p class="line-1">שירות לקוחות</p>
+	                <p class="line-2">03-0000000</p>
+	                <p class="line-3"><i class="fa fa-phone" aria-hidden="true"></i></p>
+	            </a>
+
+	            
+	        </div>
+	    </div>
+	</header>
+
+	<section class="top-inner">
+		<div class="section-inner">
+			<div class="title-wrapper">
+				<p class="title"><span>שם המאמר</span></p>
+			</div>
+			<div class="breadcrumbs">
+				<p class="line"><span><span><a href="#">דף הבית</a> . <span class="breadcrumb_last">אודות</span></span></span></p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="post woo">
+	    <div class="section-inner">
+	        <div class="content">
+	            <div class="woocommerce">
+	                <div class="woocommerce-notices-wrapper"></div>
+	                <div class="woocommerce-form-coupon-toggle">
+	                    <div class="woocommerce-info">יש לך קופון? <a href="#" class="showcoupon">לחץ כאן כדי להזין את קוד הקופון</a></div>
+	                </div>
+
+	                <form class="checkout_coupon woocommerce-form-coupon" method="post" style="display: none;">
+	                    <p>אם יש לך קוד שובר, יש לציין אותו למטה.</p>
+
+	                    <p class="form-row form-row-first">
+	                        <input type="text" name="coupon_code" class="input-text" placeholder="קוד קופון" id="coupon_code" value="" />
+	                    </p>
+
+	                    <p class="form-row form-row-last">
+	                        <button type="submit" class="button" name="apply_coupon" value="החלת קופון">החלת קופון</button>
+	                    </p>
+
+	                    <div class="clear"></div>
+	                </form>
+	                <div class="woocommerce-notices-wrapper"></div>
+	                <form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://nyga.s201.upress.link/checkout/" enctype="multipart/form-data" novalidate="novalidate">
+	                    <div class="col2-set" id="customer_details">
+	                        <div class="col-1">
+	                            <div class="woocommerce-billing-fields">
+	                                <h3>פרטי חיוב</h3>
+
+	                                <div class="woocommerce-billing-fields__field-wrapper">
+	                                    <p class="form-row form-row-first validate-required" id="billing_first_name_field" data-priority="10">
+	                                        <label for="billing_first_name" class="">שם פרטי&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="text" class="input-text" name="billing_first_name" id="billing_first_name" placeholder="" value="" autocomplete="given-name" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-last validate-required" id="billing_last_name_field" data-priority="20">
+	                                        <label for="billing_last_name" class="">שם משפחה&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="text" class="input-text" name="billing_last_name" id="billing_last_name" placeholder="" value="" autocomplete="family-name" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide" id="billing_company_field" data-priority="30">
+	                                        <label for="billing_company" class="">שם החברה&nbsp;<span class="optional">(אופציונלי)</span></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="text" class="input-text" name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide address-field update_totals_on_change validate-required" id="billing_country_field" data-priority="40">
+	                                        <label for="billing_country" class="">מדינה / אזור&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper">
+	                                            <select name="billing_country" id="billing_country" class="country_to_state country_select select2-hidden-accessible" autocomplete="country" tabindex="-1" aria-hidden="true">
+	                                                <option value="">יש לבחור מדינה / אזור…</option>
+	                                                <option value="AF">אפגניסטן</option>
+	                                                <option value="MN">מונגוליה</option>
+	                                                <option value="MT">מלטה</option>
+	                                                <option value="MQ">מרטיניק</option>
+	                                                <option value="MR">מאוריטניה</option>
+	                                                <option value="MU">מאוריציוס</option>
+	                                                <option value="YT">מאיוט</option>
+	                                                <option value="MX">מקסיקו</option>
+	                                                <option value="FM">מיקרונזיה</option>
+	                                                <option value="MD">מולדובה</option>
+	                                                <option value="MC">מונקו</option>
+	                                                <option value="ME">מונטנגרו</option>
+	                                                <option value="MY">מלזיה</option>
+	                                                <option value="MS">מונסראט</option>
+	                                                <option value="MA">מרוקו</option>
+	                                                <option value="MZ">מוזמביק</option>
+	                                                <option value="MM">מיאנמר</option>
+	                                                <option value="NA">נמיביה</option>
+	                                                <option value="NR">נאורו</option>
+	                                                <option value="NP">נפאל</option>
+	                                                <option value="NL">הולנד</option>
+	                                                <option value="NI">ניקרגוואה</option>
+	                                                <option value="NG">ניגריה</option>
+	                                                <option value="ML">מאלי</option>
+	                                                <option value="MW">מלאווי</option>
+	                                                <option value="NO">נורווגיה</option>
+	                                                <option value="KI">קיריבטי</option>
+	                                                <option value="IR">איראן</option>
+	                                                <option value="IQ">עירק</option>
+	                                                <option value="IE">אירלנד</option>
+	                                                <option value="IL" selected="selected">ישראל</option>
+	                                                <option value="IT">איטליה</option>
+	                                                <option value="JP">יפן</option>
+	                                                <option value="JO">ירדן</option>
+	                                                <option value="KZ">קזחסטן</option>
+	                                                <option value="KE">קניה</option>
+	                                                <option value="KW">כוויית</option>
+	                                                <option value="MG">מדגסקר</option>
+	                                                <option value="KG">קירגיסטן</option>
+	                                                <option value="LA">לאוס</option>
+	                                                <option value="LV">לטביה</option>
+	                                                <option value="LB">לבנון</option>
+	                                                <option value="LS">לסוטו</option>
+	                                                <option value="LR">ליבריה</option>
+	                                                <option value="LI">ליכטנשטיין</option>
+	                                                <option value="LT">ליטא</option>
+	                                                <option value="LU">לוקסמבורג</option>
+	                                                <option value="MO">מקאו</option>
+	                                                <option value="NU">נואי</option>
+	                                                <option value="OM">עומאן</option>
+	                                                <option value="IN">הודו</option>
+	                                                <option value="UG">אוגנדה</option>
+	                                                <option value="TZ">טנזניה</option>
+	                                                <option value="TH">תאילנד</option>
+	                                                <option value="TG">טוגו</option>
+	                                                <option value="TK">טוקלאו</option>
+	                                                <option value="TO">טונגה</option>
+	                                                <option value="TN">טוניסיה</option>
+	                                                <option value="TR">טורקיה</option>
+	                                                <option value="TM">טורקמניסטן</option>
+	                                                <option value="TV">טובאלו</option>
+	                                                <option value="UA">אוקראינה</option>
+	                                                <option value="SY">סוריה</option>
+	                                                <option value="GB">אנגליה</option>
+	                                                <option value="UY">אורוגוואי</option>
+	                                                <option value="UZ">אוזבקיסטן</option>
+	                                                <option value="VU">ונאוטו</option>
+	                                                <option value="VA">הוותיקן</option>
+	                                                <option value="VE">ונצואלה</option>
+	                                                <option value="VN">ויטנאם</option>
+	                                                <option value="WS">סמואה</option>
+	                                                <option value="YE">תימן</option>
+	                                                <option value="ZM">זמביה</option>
+	                                                <option value="TW">טייוואן</option>
+	                                                <option value="CH">שוויץ</option>
+	                                                <option value="PK">פקיסטן</option>
+	                                                <option value="RU">רוסיה</option>
+	                                                <option value="PA">פנמה</option>
+	                                                <option value="PY">פרגוואי</option>
+	                                                <option value="PE">פרו</option>
+	                                                <option value="PH">הפיליפינים</option>
+	                                                <option value="PN">פיטקרן</option>
+	                                                <option value="PL">פולין</option>
+	                                                <option value="PT">פורטוגל</option>
+	                                                <option value="QA">קטר</option>
+	                                                <option value="RE">ראוניון</option>
+	                                                <option value="RO">רומניה</option>
+	                                                <option value="RW">רואנדה</option>
+	                                                <option value="SE">שוודיה</option>
+	                                                <option value="SN">סנגל</option>
+	                                                <option value="RS">סרביה</option>
+	                                                <option value="SG">סינגפור</option>
+	                                                <option value="SK">סלובקיה</option>
+	                                                <option value="SI">סלובניה</option>
+	                                                <option value="SO">סומליה</option>
+	                                                <option value="ES">ספרד</option>
+	                                                <option value="SD">סודן</option>
+	                                                <option value="SR">סורינם</option>
+	                                                <option value="SZ">סווזילנד</option>
+	                                                <option value="ID">אינדונזיה</option>
+	                                                <option value="LY">לוב</option>
+	                                                <option value="IS">איסלנד</option>
+	                                                <option value="CA">קנדה</option>
+	                                                <option value="BW">בוטסואנה</option>
+	                                                <option value="BR">ברזיל</option>
+	                                                <option value="BN">ברוניי</option>
+	                                                <option value="BG">בולגריה</option>
+	                                                <option value="BI">בורונדי</option>
+	                                                <option value="KH">קמבודיה</option>
+	                                                <option value="CM">קמרון</option>
+	                                                <option value="HU">הונגריה</option>
+	                                                <option value="BT">בהוטן</option>
+	                                                <option value="CN">סין</option>
+	                                                <option value="CO">קולומביה</option>
+	                                                <option value="HR">קרואטיה</option>
+	                                                <option value="CW">קוראסאו</option>
+	                                                <option value="CY">קפריסין</option>
+	                                                <option value="DK">דנמרק</option>
+	                                                <option value="DM">דומיניקה</option>
+	                                                <option value="BO">בוליביה</option>
+	                                                <option value="BM">ברמודה</option>
+	                                                <option value="EG">מצרים</option>
+	                                                <option value="AW">ארובה</option>
+	                                                <option value="AL">אלבניה</option>
+	                                                <option value="AD">אנדורה</option>
+	                                                <option value="AO">אנגולה</option>
+	                                                <option value="AI">אנגווילה</option>
+	                                                <option value="AQ">אנטארקטיקה</option>
+	                                                <option value="AR">ארגנטינה</option>
+	                                                <option value="AM">ארמניה</option>
+	                                                <option value="AU">אוסטרליה</option>
+	                                                <option value="BJ">בנין</option>
+	                                                <option value="AT">אוסטריה</option>
+	                                                <option value="BH">בחריין</option>
+	                                                <option value="BD">בנגלדש</option>
+	                                                <option value="BB">ברבדוס</option>
+	                                                <option value="BY">בלרוס</option>
+	                                                <option value="BE">בלגיה</option>
+	                                                <option value="PW">באילו</option>
+	                                                <option value="BZ">בליז</option>
+	                                                <option value="EC">אקוודור</option>
+	                                                <option value="ZW">זימבבואה</option>
+	                                                <option value="DE">גרמניה</option>
+	                                                <option value="GR">יוון</option>
+	                                                <option value="GG">גרנזי</option>
+	                                                <option value="FI">פינלנד</option>
+	                                                <option value="GN">גינאה</option>
+	                                                <option value="GP">גואדאלופ</option>
+	                                                <option value="FR">צרפת</option>
+	                                                <option value="GD">גרנדה</option>
+	                                                <option value="GL">גרינלנד</option>
+	                                                <option value="GY">גיאנה</option>
+	                                                <option value="HT">האיטי</option>
+	                                                <option value="GU">גואם</option>
+	                                                <option value="GE">גאורגיה</option>
+	                                                <option value="HN">הונדורס</option>
+	                                                <option value="GM">גמביה</option>
+	                                                <option value="GI">גיברלטר</option>
+	                                                <option value="GH">גאנה</option>
+	                                                <option value="ET">אתיופיה</option>
+	                                                <option value="GA">גאבון</option>
+	                                                <option value="EE">אסטוניה</option>
+	                                                <option value="ER">אריתריאה</option>
+	                                                <option value="GT">גואטמלה</option>
+	                                                <option value="GQ">גינאה המשוונית</option>
+	                                                <option value="LK">סרי לנקה</option>
+	                                                <option value="AX">איי אולנד</option>
+	                                                <option value="SS">דרום סודן</option>
+	                                                <option value="ZA">דרום אפריקה</option>
+	                                                <option value="BV">האי בובה</option>
+	                                                <option value="SB">איי שלמה</option>
+	                                                <option value="SL">סיירה ליאון</option>
+	                                                <option value="SV">אל סלוודור</option>
+	                                                <option value="KR">דרום קוריאה</option>
+	                                                <option value="TL">מזרח טימור</option>
+	                                                <option value="BA">בוסניה והרצגובינה</option>
+	                                                <option value="SA">ערב הסעודית</option>
+	                                                <option value="TT">טרינידד וטובגו</option>
+	                                                <option value="BS">איי הבהאמה</option>
+	                                                <option value="GW">גינאה ביסאו</option>
+	                                                <option value="AE">איחוד האמירויות</option>
+	                                                <option value="CI">חוף שנהב</option>
+	                                                <option value="AG">אנטיגואה וברבודה</option>
+	                                                <option value="IM">האי מאן</option>
+	                                                <option value="VI">איי הבתולה</option>
+	                                                <option value="EH">מערב הסהרה</option>
+	                                                <option value="AS">סמואה האמריקנית</option>
+	                                                <option value="HK">הונג קונג</option>
+	                                                <option value="BF">בורקינה פאסו</option>
+	                                                <option value="SC">איי סיישל</option>
+	                                                <option value="SM">סן מרינו</option>
+	                                                <option value="CV">קייפ ורדה</option>
+	                                                <option value="DO">הרפובליקה הדומיניקנית</option>
+	                                                <option value="FK">איי פוקלנד</option>
+	                                                <option value="FO">איי פארו</option>
+	                                                <option value="MH">איי מרשל</option>
+	                                                <option value="NC">קלדוניה החדשה</option>
+	                                                <option value="NZ">ניו זילנד</option>
+	                                                <option value="CR">קוסטה ריקה</option>
+	                                                <option value="CK">איי קוק</option>
+	                                                <option value="NF">האי נורפולק</option>
+	                                                <option value="KP">צפון קוריאה</option>
+	                                                <option value="PS">השטחים הפלשתינים</option>
+	                                                <option value="MV">האיים המלדיביים</option>
+	                                                <option value="PR">פורטו ריקו</option>
+	                                                <option value="KM">איי קומורו</option>
+	                                                <option value="GF">גיאנה הצרפתית</option>
+	                                                <option value="MK">צפון מקדוניה</option>
+	                                                <option value="PF">פולינזיה הצרפתית</option>
+	                                                <option value="SH">סנט הלנה</option>
+	                                                <option value="BL">סנט ברתלמי</option>
+	                                                <option value="KY">איי קיימן</option>
+	                                                <option value="TC">איי טורקס וקייקוס</option>
+	                                                <option value="MP">אי מריאנה הצפוניים</option>
+	                                                <option value="CX">אי חג המולד</option>
+	                                                <option value="VC">סנט וינסנט והגרנדינים</option>
+	                                                <option value="KN">סנט קיטס ונוויס</option>
+	                                                <option value="CF">הרפובליקה המרכז אפריקנית</option>
+	                                                <option value="ST">סאו טומה ופרינסיפה</option>
+	                                                <option value="WF">איי ווליס ופוטונה</option>
+	                                                <option value="PM">סנט פייר ומיקלון</option>
+	                                                <option value="IO">הטריטוריה הבריטית באוקינוס ההודי</option>
+	                                                <option value="HM">האי הרד ואיי מקדונלד</option>
+	                                                <option value="SJ">איי סבלברד ויאן מאיין</option>
+	                                                <option value="TF">הטריטוריות הדרומיות של צרפת</option>
+	                                                <option value="MF">סנט מרטין (חלק צרפתי)</option>
+	                                                <option value="SX">סנט מרטין (חלק הולנדי)</option>
+	                                                <option value="UM">ארצות הברית (ארה"ב) איים מרוחקים הקטנים</option>
+	                                                <option value="VG">איי הבתולה (הבריטיים)</option>
+	                                                <option value="CC">איי קוקוס (קילינג)</option>
+	                                                <option value="CZ">הרפובליקה הצ'כית</option>
+	                                                <option value="LC">סנט לוצ'יה</option>
+	                                                <option value="CG">קונגו (ברזוויל)</option>
+	                                                <option value="CD">קונגו (קינשאסה)</option>
+	                                                <option value="US">ארה"ב</option>
+	                                                <option value="DJ">ג'יבוטי</option>
+	                                                <option value="DZ">אלג'יריה</option>
+	                                                <option value="CL">צ'ילה</option>
+	                                                <option value="FJ">פיג'י</option>
+	                                                <option value="NE">ניז'ר</option>
+	                                                <option value="JE">ג'רזי</option>
+	                                                <option value="AZ">אזרבייג'ן</option>
+	                                                <option value="TD">צ'אד</option>
+	                                                <option value="TJ">טג'יקיסטן</option>
+	                                                <option value="JM">ג'מייקה</option>
+	                                                <option value="GS">ג'ורג'יה הדרומית / איים סנדוויץ'</option>
+	                                                <option value="CU">תת-מחוז קובה</option>
+	                                                <option value="PG">פפואה-גינאה החדשה</option>
+	                                                <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+	                                            </select>
+	                                            <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;">
+	                                                <span class="selection">
+	                                                    <span class="select2-selection select2-selection--single" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-billing_country-container" role="combobox">
+	                                                        <span class="select2-selection__rendered" id="select2-billing_country-container" role="textbox" aria-readonly="true" title="ישראל">ישראל</span>
+	                                                        <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+	                                                    </span>
+	                                                </span>
+	                                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+	                                            </span>
+	                                            <noscript><button type="submit" name="woocommerce_checkout_update_totals" value="יש לעדכן את המדינה / האזור">יש לעדכן את המדינה / האזור</button></noscript>
+	                                        </span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide address-field validate-required" id="billing_address_1_field" data-priority="50">
+	                                        <label for="billing_address_1" class="">כתובת רחוב&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper">
+	                                            <input type="text" class="input-text" name="billing_address_1" id="billing_address_1" placeholder="מספר בית ושם רחוב" value="" autocomplete="address-line1" data-placeholder="מספר בית ושם רחוב" />
+	                                        </span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide address-field" id="billing_address_2_field" data-priority="60">
+	                                        <label for="billing_address_2" class="screen-reader-text">דירה, סוויטה, יחידה וכו' (אופציונלי)&nbsp;<span class="optional">(אופציונלי)</span></label>
+	                                        <span class="woocommerce-input-wrapper">
+	                                            <input
+	                                                type="text"
+	                                                class="input-text"
+	                                                name="billing_address_2"
+	                                                id="billing_address_2"
+	                                                placeholder="דירה, סוויטה, יחידה וכו' (אופציונלי)"
+	                                                value=""
+	                                                autocomplete="address-line2"
+	                                                data-placeholder="דירה, סוויטה, יחידה וכו' (אופציונלי)"
+	                                            />
+	                                        </span>
+	                                    </p>
+	                                    <p
+	                                        class="form-row form-row-wide address-field validate-required validate-postcode"
+	                                        id="billing_postcode_field"
+	                                        data-priority="65"
+	                                        data-o_class="form-row form-row-wide address-field validate-required validate-postcode"
+	                                    >
+	                                        <label for="billing_postcode" class="">מיקוד / תא דואר&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="text" class="input-text" name="billing_postcode" id="billing_postcode" placeholder="" value="" autocomplete="postal-code" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide address-field validate-required" id="billing_city_field" data-priority="70" data-o_class="form-row form-row-wide address-field validate-required">
+	                                        <label for="billing_city" class="">עיר&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="text" class="input-text" name="billing_city" id="billing_city" placeholder="" value="" autocomplete="address-level2" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide address-field validate-state" id="billing_state_field" style="display: none;" data-o_class="form-row form-row-wide address-field validate-state">
+	                                        <label for="billing_state" class="">מדינה / ארץ&nbsp;<span class="optional">(אופציונלי)</span></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="hidden" id="billing_state" name="billing_state" placeholder="" data-input-classes="" class="hidden" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide validate-required validate-phone" id="billing_phone_field" data-priority="100">
+	                                        <label for="billing_phone" class="">טלפון&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="tel" class="input-text" name="billing_phone" id="billing_phone" placeholder="" value="" autocomplete="tel" /></span>
+	                                    </p>
+	                                    <p class="form-row form-row-wide validate-required validate-email" id="billing_email_field" data-priority="110">
+	                                        <label for="billing_email" class="">כתובת אימייל&nbsp;<abbr class="required" title="נדרש">*</abbr></label>
+	                                        <span class="woocommerce-input-wrapper"><input type="email" class="input-text" name="billing_email" id="billing_email" placeholder="" value="ohad@extra.co.il" autocomplete="email username" /></span>
+	                                    </p>
+	                                </div>
+	                            </div>
+	                        </div>
+
+	                        <div class="col-2">
+	                            <div class="woocommerce-shipping-fields"></div>
+	                            <div class="woocommerce-additional-fields">
+	                                <h3>מידע נוסף</h3>
+
+	                                <div class="woocommerce-additional-fields__field-wrapper">
+	                                    <p class="form-row notes" id="order_comments_field" data-priority="">
+	                                        <label for="order_comments" class="">הערות להזמנה&nbsp;<span class="optional">(אופציונלי)</span></label>
+	                                        <span class="woocommerce-input-wrapper">
+	                                            <textarea name="order_comments" class="input-text" id="order_comments" placeholder="הערות על ההזמנה, לדוגמה, הערות מיוחדות למסירה." rows="2" cols="5"></textarea>
+	                                        </span>
+	                                    </p>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+
+	                    <h3 id="order_review_heading">פרטי ההזמנה</h3>
+
+	                    <div id="order_review" class="woocommerce-checkout-review-order">
+	                        <table class="shop_table woocommerce-checkout-review-order-table">
+	                            <thead>
+	                                <tr>
+	                                    <th class="product-name">מוצר</th>
+	                                    <th class="product-total">סכום ביניים</th>
+	                                </tr>
+	                            </thead>
+	                            <tbody>
+	                                <tr class="cart_item">
+	                                    <td class="product-name">כיור נירוסטה יחיד - טרטופו&nbsp; <strong class="product-quantity">×&nbsp;1</strong></td>
+	                                    <td class="product-total">
+	                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>399.00</span>
+	                                    </td>
+	                                </tr>
+	                                <tr class="cart_item">
+	                                    <td class="product-name">כיור ארטגו&nbsp; <strong class="product-quantity">×&nbsp;1</strong></td>
+	                                    <td class="product-total">
+	                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>999.00</span>
+	                                    </td>
+	                                </tr>
+	                                <tr class="cart_item">
+	                                    <td class="product-name">כיור נירוסטה יחיד - טרטופו&nbsp; <strong class="product-quantity">×&nbsp;1</strong></td>
+	                                    <td class="product-total">
+	                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>399.00</span>
+	                                    </td>
+	                                </tr>
+	                            </tbody>
+	                            <tfoot>
+	                                <tr class="cart-subtotal">
+	                                    <th>סכום ביניים</th>
+	                                    <td>
+	                                        <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>1,797.00</span>
+	                                    </td>
+	                                </tr>
+
+	                                <tr class="order-total">
+	                                    <th>סה"כ</th>
+	                                    <td>
+	                                        <strong>
+	                                            <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₪</span>1,797.00</span>
+	                                        </strong>
+	                                    </td>
+	                                </tr>
+	                            </tfoot>
+	                        </table>
+
+	                        <div id="payment" class="woocommerce-checkout-payment">
+	                            <ul class="wc_payment_methods payment_methods methods">
+	                                <li class="woocommerce-notice woocommerce-notice--info woocommerce-info">אין אפשרויות תשלום הזמינות עבור המדינה שלך. צרו קשר כדי לבצע תשלום באמצעים חלופיים.</li>
+	                            </ul>
+	                            <div class="form-row place-order">
+	                                <noscript>
+	                                    הדפדפן אינו תומך ב JavaScript, או שהוא מכובה, נא לוודא שאתה לוחץ על <em>עדכן סכום</em> לפני ביצוע ההזמנה. אתה עשוי להיות מחויב יותר מהסכום האמור לעיל, אם לא תצליח לעשות זאת. <br />
+	                                    <button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="עדכן סכום">עדכן סכום</button>
+	                                </noscript>
+
+	                                <div class="woocommerce-terms-and-conditions-wrapper">
+	                                    <div class="woocommerce-privacy-policy-text">
+	                                        <p>
+	                                            אנחנו נשתמש בפרטים האישיים כדי לעבד את ההזמנה, להציע לך תמיכה בתהליך באתר זה וכדי לבצע פעולות נוספות כפי שמפורט ב
+	                                            <a href="http://nyga.s201.upress.link/privacy-policy__trashed/" class="woocommerce-privacy-policy-link" target="_blank">מדיניות פרטיות</a>.
+	                                        </p>
+	                                    </div>
+	                                </div>
+
+	                                <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="שליחת הזמנה" data-value="שליחת הזמנה">שליחת הזמנה</button>
+
+	                                <input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="2ef648162a" />
+	                                <input type="hidden" name="_wp_http_referer" value="/?wc-ajax=update_order_review" />
+	                            </div>
+	                        </div>
+	                    </div>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+
+
+	<footer>
+		<div class="part-top">
+			<div class="section-inner">
+				<div class="cols">
+					<div class="col">
+						<p class="title">מפת האתר</p>
+						<div class="content">
+							<div class="menu-cont">
+								<ul class="menu">
+									<li><a href="">עמוד הבית</a></li>
+									<li><a href="">אודות</a></li>
+									<li><a href="">קטלוג</a></li>
+									<li><a href="">תווי תקן</a></li>
+									<li><a href="">בלוג</a></li>
+									<li><a href="">יצירת קשר</a></li>
+									<li><a href="">אודות</a></li>
+									<li><a href="">קטלוג</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<p class="title">קטגריית מוצרים</p>
+						<div class="content">
+							<div class="menu-cont">
+								<ul class="menu">
+									<li><a href="">עמוד הבית</a></li>
+									<li><a href="">אודות</a></li>
+									<li><a href="">קטלוג</a></li>
+									<li><a href="">תווי תקן</a></li>
+									<li><a href="">תווי תקן</a></li>
+									<li><a href="">בלוג</a></li>
+									<li><a href="">יצירת קשר</a></li>
+									<li><a href="">עמוד הבית</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<p class="title">קטגריית מוצרים</p>
+						<div class="content">
+							<div class="menu-cont">
+								<ul class="menu">
+									<li><a href="">עמוד הבית</a></li>
+									<li><a href="">אודות</a></li>
+									<li><a href="">קטלוג</a></li>
+									<li><a href="">תווי תקן</a></li>
+									<li><a href="">תווי תקן</a></li>
+									<li><a href="">בלוג</a></li>
+									<li><a href="">יצירת קשר</a></li>
+									<li><a href="">עמוד הבית</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<p class="title">אולם תצוגה פולג, נתניה</p>
+						<div class="content">
+							<p>כתובת: תל גיבורים 5, תל אביב.</p>
+							<p>טלפון: 03-6816920</p>
+							<p>נייד: 050-9907377</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<p class="title">אולם תצוגה בני ברק</p>
+						<div class="content">
+							<p>א' – ה': 8:00 – 18:00</p>
+							<p>שישי וערבי חג: בתיאום טלפוני בלבד</p>
+							<p>נייד: 050-9907377</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="social">
+					<p class="title">עקבו אחרינו</p>
+					<a href="#">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="part-bottom">
+			<div class="section-inner">
+				<p class="copy">© כל הזכויות שמורות לניגא 2020</p>
+		
+				<p class="credit">
+					<span>עיצוב ובניית אתר ע״י </span>
+					<img src="images/logoextra.png" alt="">
+					<span>דיגיטל</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
