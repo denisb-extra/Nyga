@@ -64,6 +64,10 @@ $(document).ready(function ($) {
         selector.find(".title .item").html(html);
     });
 
+    $(".panel-corian .title").on('click', function(event) {
+        $(".panel-corian .hidden").slideToggle();
+    });
+
 
 });
 
