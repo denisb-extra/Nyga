@@ -307,20 +307,6 @@ section.woo {
 		font-size: 20px;
 		color: #3c3c3c;
 	}
-	.woocommerce-checkout-review-order-table {
-		input[type="radio"] {
-			display: none;
-			& ~ label {
-				display: none;
-			}
-		}
-		input[type="radio"]:checked {
-			display: none;
-			& ~ label {
-				display: inline;
-			}
-		}
-	}
 
 	.cart-collaterals {
 		padding-right: 45px;
@@ -347,6 +333,16 @@ section.woo {
 				@media only screen and (max-width : 767px) {
 					margin-top: 25px;
 				}
+			}
+		}
+
+		.cross-sells {
+			width: 100%;
+			float: none;
+			margin-left: 0;
+			a {
+				color: #fff;
+				text-decoration: none;
 			}
 		}
 		
@@ -537,6 +533,7 @@ section.woo {
 		th {
 			text-align: right;
 			line-height: 35px;
+			padding: 15px;
 		}
 
 		.button {
